@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <!-- Yet another cool zabbix html email template, by LM -->
+<head>
+<title>Zabbix Problem Update Notification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+body { font-family: Arial, Tahoma; font-size:small;}
+table, th, td { 
+  border: 1px solid white;
+  border-collapse: collapse;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+th, td { background-color: paleturquoise; }
+.evidence { font-size: 1.5em; font-weight: bold;}
+
+</style>
+</head>
+<body>
+  
+<table style="width: 900px;">
+    <tr>
+    <th colspan="2" style="background-color: whitesmoke; font-size: x-large; font-weight: bold; padding: 12px"> ☑️ Problem Updated ☑️ </th>
+    </tr>    
+  <tr>
+    <th colspan="2" style="background-color: dodgerblue; font-size: large; padding: 8px">Host: {HOST.HOST} ({HOST.IP})</th>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Trigger:</td>
+    <td><p class=evidence>{TRIGGER.NAME}</p></td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">User:</td>
+    <td style="font-weight: bold;">{USER.FULLNAME}</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Action:</td>
+    <td style="font-weight: bold;">{EVENT.UPDATE.ACTION}</td>
+  </tr>
+  <tr>
+    <td>Message:</td>
+    <td>{EVENT.UPDATE.MESSAGE}</td>
+  </tr>
+  <tr>
+    <td>Updated at:</td>
+    <td>{EVENT.UPDATE.TIME} on {EVENT.UPDATE.DATE}</td>
+  </tr>
+  <tr>
+    <td>Current Problem Status:</td>
+    <td>{EVENT.STATUS}</td>
+  </tr>
+  <tr>
+    <td>Current Problem Age:</td>
+    <td>{EVENT.AGE}</td>
+  </tr>
+  <tr>
+    <td>Severity:</td>
+    <td>{TRIGGER.SEVERITY}</td>
+  </tr>
+  <tr>
+    <td>Item:</td>
+    <td>{ITEM.KEY1}</td>
+  </tr>
+  <tr>
+    <td>Last value:</td>
+    <td>{ITEM.VALUE1}</td>
+  </tr>
+  <tr>
+    <td>Trigger description:</td>
+    <td>{TRIGGER.DESCRIPTION}</td>
+  </tr>
+  <tr>
+    <td>Event Tags:</td>
+    <td>{EVENT.TAGS}</td>
+  </tr>
+  <tr>
+    <td>Event ack:</td>
+    <td>{EVENT.ACK.STATUS}</td>
+  </tr>
+  <tr>
+    <td>Event history:</td>
+    <td>{EVENT.UPDATE.HISTORY}</td>
+  </tr>
+  <tr>
+    <td>Direct Links:</td>
+    <td>
+        <a href="https://acizabbix01.bvmvo.net/zabbix/zabbix.php?action=problem.view&hostids%5B0%5D={HOST.ID}&filter_set=1">Host Recent problems</a> ||
+        <a href="https://acizabbix01.bvmvo.net/zabbix/zabbix.php?action=latest.view&hostids%5B%5D={HOST.ID}&filter_set=1">Host Latest data</a>  || 
+        <a href="https://acizabbix01.bvmvo.net/zabbix/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}">Event Details</a>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2" style="background-color: deepskyblue; padding: 8px">Inventory information (if available)</th>
+  </tr>
+  <tr>
+    <td>Host description:</td>
+    <td>{HOST.DESCRIPTION}</td>
+  </tr>
+  <tr>
+    <td>OS details:</td>
+    <td>{INVENTORY.OS}</td>
+  </tr>
+  <tr>
+    <td>Location:</td>
+    <td>{INVENTORY.LOCATION}</td>
+  </tr>
+  <tr>
+    <td>Contact:</td>
+    <td>{INVENTORY.CONTACT}</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="background-color: lightgray; font-size:x-small; padding: 6px; font-weight: lighter; text-align: center;";><i>by BVTECH with Zabbix at your service</i></td>
+  </tr>
+</table>
+
+</body>
+</html>
+
