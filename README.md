@@ -1,4 +1,4 @@
-# zabbix-email-html-template
+# zabbix-email-html-templates
 The definitive and coolest HTML Templates for Zabbix Email.
 Tested with Zabbix 6.4.
 
