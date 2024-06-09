@@ -9,6 +9,8 @@ There are similar solutions online, but I decided to write my own implementation
 
 My html is written strictly by hand (but with a minimum of style) and deliberately minimalist.
 
+Examples available in Images folder.
+
 Tested with Zabbix 6.4.
 
 ## Email Subjects
