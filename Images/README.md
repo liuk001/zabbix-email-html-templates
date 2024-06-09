@@ -1,4 +1,4 @@
-# Some example images
+# Some example screenshot
 ## Problem
 ![Zabbix_Problem_Example](Zabbix_Problem_Example.png)
 
