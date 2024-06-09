@@ -1,4 +1,4 @@
-# HTML Templates for Zabbix Email notifications
+# Cool HTML Templates for Zabbix Email notifications
 My definitive and coolest HTML Templates for Zabbix Email.
 Default email notifications in Zabbix are really basic and I strongly believe that such notifications are really important to communicate effectively and efficiently to users what's going on.
 There are similar solutions online, but I decided to write my own implementation based on the following criteria:
