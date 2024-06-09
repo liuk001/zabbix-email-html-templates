@@ -1,4 +1,6 @@
-# Some example screenshot
+# Some example screenshots
+Rendering OK, tested with Thunderbird mail client, Outlook Web Access, Outlook Mobile
+
 ## Problem
 ![Zabbix_Problem_Example](Zabbix_Problem_Example.png)
 
