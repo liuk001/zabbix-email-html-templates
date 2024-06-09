@@ -7,6 +7,8 @@ There are similar solutions online, but I decided to write my own implementation
  - they must not contain embedded images or links to external URLs because the result may not be deterministic
  - they must be pleasing to the eye :-)
 
+My html is written strictly by hand (but with a minimum of style) and deliberately minimalist.
+
 Tested with Zabbix 6.4.
 
 ## Email Subjects
