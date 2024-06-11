@@ -2,7 +2,7 @@
 <html>
     <!-- Yet another cool zabbix html email template, by LM -->
 <head>
-<title>Zabbix Problem Update Notification</title>
+<title>Zabbix Problem Notification</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
 body { font-family: Arial, Tahoma; font-size:small;}
@@ -14,51 +14,35 @@ table, th, td {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-th, td { background-color: paleturquoise; }
-.evidence { font-size: 1.5em; font-weight: bold;}
+th, td { background-color: rgb(223, 186, 182);  padding:4px }
+.evidence { color: red; font-size: 1.5em; font-weight: bolder;}
 
 </style>
 </head>
 <body>
-  
+
 <table style="width: 900px;">
     <tr>
-    <th colspan="2" style="background-color: whitesmoke; font-size: x-large; font-weight: bold; padding: 12px"> ☑️ Problem Updated ☑️ </th>
-    </tr>    
-  <tr>
-    <th colspan="2" style="background-color: dodgerblue; font-size: large; padding: 8px">Host: {HOST.HOST} ({HOST.IP})</th>
+    <th colspan="2" style="background-color: whitesmoke; font-size: x-large; font-weight: bold; padding: 12px"> 🔴 Problem Started 🔴 </th>
+    </tr>
+    <tr>
+    <th colspan="2" style="background-color: crimson; font-size: large; padding: 8px">Host: {HOST.HOST} ({HOST.IP})</th>
   </tr>
   <tr>
     <td style="font-weight: bold;">Trigger:</td>
     <td><p class=evidence>{TRIGGER.NAME}</p></td>
   </tr>
   <tr>
-    <td style="font-weight: bold;">User:</td>
-    <td style="font-weight: bold;">{USER.FULLNAME}</td>
-  </tr>
-  <tr>
-    <td style="font-weight: bold;">Action:</td>
-    <td style="font-weight: bold;">{EVENT.UPDATE.ACTION}</td>
-  </tr>
-  <tr>
-    <td>Message:</td>
-    <td>{EVENT.UPDATE.MESSAGE}</td>
-  </tr>
-  <tr>
-    <td>Updated at:</td>
-    <td>{EVENT.UPDATE.TIME} on {EVENT.UPDATE.DATE}</td>
-  </tr>
-  <tr>
-    <td>Current Problem Status:</td>
-    <td>{EVENT.STATUS}</td>
-  </tr>
-  <tr>
-    <td>Current Problem Age:</td>
-    <td>{EVENT.AGE}</td>
-  </tr>
-  <tr>
     <td>Severity:</td>
     <td>{TRIGGER.SEVERITY}</td>
+  </tr>
+  <tr>
+    <td>Started at:</td>
+    <td>{EVENT.TIME} on {EVENT.DATE}</td>
+  </tr>
+  <tr>
+    <td>Current status:</td>
+    <td>{TRIGGER.STATUS}</td>
   </tr>
   <tr>
     <td>Item:</td>
@@ -73,7 +57,7 @@ th, td { background-color: paleturquoise; }
     <td>{TRIGGER.DESCRIPTION}</td>
   </tr>
   <tr>
-    <td>Event Tags:</td>
+    <td>Event tags:</td>
     <td>{EVENT.TAGS}</td>
   </tr>
   <tr>
@@ -93,7 +77,7 @@ th, td { background-color: paleturquoise; }
     </td>
   </tr>
   <tr>
-    <th colspan="2" style="background-color: deepskyblue; padding: 8px">Inventory information (if available)</th>
+    <th colspan="2" style="background-color: darksalmon; padding: 8px">Inventory information (if available)</th>
   </tr>
   <tr>
     <td>Host description:</td>
