@@ -20,8 +20,9 @@ I prefer to change default Subject line to be more verbose:
  - ☑️ UPDATED problem on Host {HOST.NAME} in {EVENT.AGE}: {EVENT.NAME}
 
 ## Setup notes
-Before loading html files in your Media Type replace the following:
- - YOUR-ZABBIX-FQDN in order to make Direct Links work
- - The footer with a meaningful text for your use case
+Before loading html files in your Media Type do the following:
+ - Edit Makefile and change variables in the CUSTOM section
+ - Run "make mytemplates"
+ - Upload the _*.html files to your Zabbix instance accordingly
 
 (Enjoy)
