@@ -4,7 +4,7 @@
 # CUSTOM Begins
 # Change the following variables as per your needs:
 myzabbix := myzabbix.example.com
-myfooter := Wonderful Monitoring with Zabbix
+myfooter := by ACME with Zabbix at your service
 # CUSTOM Ends
 
 objects = _problem.html _resolved.html _updated.html
